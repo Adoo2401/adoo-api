@@ -9,6 +9,8 @@ const configuration=new Configuration({
     apiKey:process.env.OPENAI_API_KEY
 });
 
+const PORT=process.env.PORT ||5000;
+
 const openai=new OpenAIApi(configuration);
 
 const app=express();
@@ -41,4 +43,4 @@ app.post("/",async(req,resp)=>{
     }
 })
 
-app.listen(5000,()=>console.log("Server is working on port 5000"))
+app.listen(PORT,()=>console.log("Server is working on port 5000"))
