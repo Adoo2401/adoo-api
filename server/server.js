@@ -39,7 +39,7 @@ app.post("/",async(req,resp)=>{
         })
 
     } catch (error) {
-        resp.status(500).json({success:false,message:'Something Went Wrong',error:error.message})
+        resp.status(500).json({success:false,message:'Something Went Wrong',error:error})
     }
 })
 
