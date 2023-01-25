@@ -94,7 +94,7 @@ const handleSubmit=async(e)=>{
 
   //fetching Data from server
 
-  const response=await fetch('https://adoo-api-wrrz.vercel.app/',{
+  const response=await fetch('https://cute-houndstooth-seal.cyclic.app',{
     method:"POST",
     headers:{"Content-Type":'application/json'},
     body:JSON.stringify({prompt:data.get("prompt")})
